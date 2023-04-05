@@ -15,7 +15,7 @@ import Register from './pages/users/Register';
 import Login from './pages/users/Login';
 
 import Navbar from './components/Navbar';
-import LoggedInStatusBar from './components/LoggedInStatusBar'
+import LoggedInStatusBar from './components/Footer'
 
 function App() {
 

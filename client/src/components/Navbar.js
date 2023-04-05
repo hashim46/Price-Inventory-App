@@ -47,8 +47,7 @@ function Navbar({ user, setUser }) {
                     <span style={{ fontWeight: 'bold', color: 'white', fontSize: '18px', paddingRight: '50px' }}>Register</span>
                   </Link>
                 </li>
-                <br/>
-                <br/>
+                
                 <li className="nav-item">
                   <Link className="nav-link" to="/login">
                     <span style={{ fontWeight: 'bold', color: 'white', fontSize: '18px', paddingRight: '50px' }}>Login</span>
