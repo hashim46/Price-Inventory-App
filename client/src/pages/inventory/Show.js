@@ -1,7 +1,7 @@
 import { useEffect, useState, useRef } from "react"
 import { Link, useNavigate, useParams } from "react-router-dom"
 import { createCommentForPost, deleteCommentFromPost } from "../../services/commentService"
-import { deletePost, getPost } from "../../services/postService"
+import { deletePost, getPost } from "../../services/inventoryService"
 
 function Show({ user }) {
 

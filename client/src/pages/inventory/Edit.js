@@ -1,6 +1,6 @@
 import { useEffect, useState, useRef } from 'react'
 import { useParams, useNavigate, Link } from 'react-router-dom'
-import { getPost, updatePost } from '../../services/postService'
+import { getPost, updatePost } from '../../services/inventoryService'
 
 function Edit() {
 

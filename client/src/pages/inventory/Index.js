@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react"
 import { Link } from "react-router-dom"
-import { getAllPosts } from "../../services/postService"
+import { getAllPosts } from "../../services/inventoryService"
 
 function Index({ user }) {
 
