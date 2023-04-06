@@ -5,10 +5,10 @@ import { userInfo } from './services/userService';
 
 import './index.css';
 
-import EditPost from './pages/inventory/Edit';
-import IndexPost from './pages/inventory/Index';
-import NewPost from './pages/inventory/New';
-import ShowPost from './pages/inventory/Show';
+import EditInventory from './pages/inventory/Edit';
+import IndexInventory from './pages/inventory/Index';
+import NewInventory from './pages/inventory/New';
+import ShowInventory from './pages/inventory/Show';
 import EditComment from './pages/comments/Edit';
 
 import Register from './pages/users/Register';
@@ -46,12 +46,12 @@ function App() {
     <div className="App">
       <Navbar user={loggedIn} setUser={setUser} />
       <Routes>
-          <Route path='/inventory' element={<IndexPost user={loggedIn} />} />
-          <Route path='/inventory/:id' element={<ShowPost user={loggedIn} />} />
+          <Route path='/inventory' element={<IndexInventory user={loggedIn} />} />
+          <Route path='/inventory/:id' element={<ShowInventory user={loggedIn} />} />
           {loggedIn ?
             <>
-              <Route path='/inventory/new' element={<NewPost user={loggedIn} />} />
-              <Route path='/inventory/:id/edit' element={<EditPost />} />
+              <Route path='/inventory/new' element={<NewInventory user={loggedIn} />} />
+              <Route path='/inventory/:id/edit' element={<EditInventory />} />
               <Route path='/inventory/:id/comments/:cid' element={<EditComment />} />
               {!isLoading && <Route path='*' element={<Navigate to='/inventory' />} />}
             </>

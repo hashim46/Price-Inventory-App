@@ -53,7 +53,7 @@ function Show({ user }) {
             <div>
                 <div className="a-post">
                     <h2 style = {{fontWeight: 'bold', color: '#DB534D'}}>{post.subject}</h2>
-                    <h5 style={{ opacity: '.2'}}>Posted by {post.user} on {new Date(post.createdAt).toLocaleDateString()} at {new Date(post.createdAt).toLocaleTimeString()}</h5>
+                    <h5 style={{ opacity: '.2'}}>Added by {post.user} on {new Date(post.createdAt).toLocaleDateString()} at {new Date(post.createdAt).toLocaleTimeString()}</h5>
                     <div className='p-body'>Price: ${post.body}</div><br /><br />
 
                     {
