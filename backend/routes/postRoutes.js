@@ -2,7 +2,7 @@ const express = require('express')
 
 const router = express.Router()
 
-const postControl = require('../controllers/postController')
+const postControl = require('../controllers/inventoryController')
 
 const { authorize, confirmUserAccess } = require('../middleware/authMiddleware')
 
