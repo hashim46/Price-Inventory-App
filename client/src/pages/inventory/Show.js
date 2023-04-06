@@ -15,7 +15,7 @@ function Show({ user }) {
     useEffect(() => {
         async function loadData() {
             const data = await getPost(params.id)
-            if (!data) navigate('/posts')
+            if (!data) navigate('/inventory')
             setPost(data)
         }
         loadData()
@@ -30,7 +30,7 @@ function Show({ user }) {
 
     async function handleDeletePost() {
         await deletePost(post._id)
-        navigate('/posts')
+        navigate('/inventory')
     }
 
     async function handleSubmit(e) {
@@ -70,7 +70,7 @@ function Show({ user }) {
                                     {comment.user === user &&
                                         <>
                                             <button onClick={() => handleDeleteComment(comment)}>X</button>
-                                            <Link to={`/posts/${post._id}/comments/${comment._id}`}><span>+</span></Link>
+                                            <Link to={`/inventory/${post._id}/comments/${comment._id}`}><span>+</span></Link>
                                         </>
                                     }
                                 </div>
@@ -93,12 +93,12 @@ function Show({ user }) {
                         {post.user === user &&
                             <>
                                 <button onClick={handleDeletePost}>Delete</button>
-                                <Link to={`/posts/${post._id}/edit`}>
+                                <Link to={`/inventory/${post._id}/edit`}>
                                     <button>Edit</button>
                                 </Link>
                             </>
                         }
-                        <Link to='/posts'>
+                        <Link to='/inventory'>
                             <button>Back</button>
                         </Link>
                     </div>

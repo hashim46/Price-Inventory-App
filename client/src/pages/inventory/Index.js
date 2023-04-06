@@ -20,7 +20,7 @@ function Index({ user }) {
                 <div id="posts">
 
                         {posts?.map((post, index) => 
-                            <Link to={`/posts/${post._id}`} key={index}>
+                            <Link to={`/inventory/${post._id}`} key={index}>
                                 <div className="a-post">
                                     {post.subject}
                                 </div>
@@ -28,7 +28,7 @@ function Index({ user }) {
                         )}
             
                     {user && 
-                        <Link to="/posts/new">
+                        <Link to="/inventory/new">
                             <button>NEW ITEM</button>
                         </Link>
                     }

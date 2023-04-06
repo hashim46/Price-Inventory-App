@@ -23,7 +23,7 @@ function Edit() {
         }
        
         await updateCommentOfIdFromPost(updatedComment, params.cid, params.id)
-        navigate(`/posts/${params.id}`)
+        navigate(`/inventory/${params.id}`)
     }
 
     return ( 
@@ -37,7 +37,7 @@ function Edit() {
 
                     <button>Submit</button>
                 </form>
-                <Link to={`/posts/${params.id}`}>
+                <Link to={`/inventory/${params.id}`}>
                     <button>Back</button>
                 </Link>
             </div>

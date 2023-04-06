@@ -23,7 +23,7 @@ function Edit() {
             body: bodyRef.current.value
         }
         await updatePost(post._id, updatedPost)
-        navigate(`/posts/${post._id}`)
+        navigate(`/inventory/${post._id}`)
     }
 
     return ( 
@@ -39,7 +39,7 @@ function Edit() {
 
                     <button>Submit</button>
                 </form>
-                <Link to={`/posts/${post._id}`}>
+                <Link to={`/inventory/${post._id}`}>
                     <button>Back</button>
                 </Link>
                 

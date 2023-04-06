@@ -19,6 +19,7 @@ module.exports.index = async (req, res) => {
 }
 
 module.exports.delete = async (req, res) => {
+    console.log("here")
     try {
         // first find the post, store it in a variable, then delete it from database
         const post = await Inventory.findByIdAndDelete(req.params.id)

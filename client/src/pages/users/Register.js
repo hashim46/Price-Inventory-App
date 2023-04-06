@@ -35,7 +35,7 @@ function Register({ setUser }) {
         const user = await userInfo()
         setUser(user)
 
-        navigate('/posts')
+        navigate('/inventory')
     }
 
     return ( 

@@ -16,7 +16,7 @@ function New({ user }) {
             user
         }
         await createPost(post)
-        navigate('/posts')
+        navigate('/inventory')
     }
 
     return ( 

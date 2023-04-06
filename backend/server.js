@@ -27,7 +27,7 @@ const { authorize } = require('./middleware/authMiddleware')
 app.use(express.json())
 app.use(cors())
 
-app.use('/posts', postRoutes)
+app.use('/inventory', postRoutes)
 // "/p/" stands for post and all comment routes need a reference to their post
 app.use('/comments/p/', commentRoutes)
 app.use('/users', authorize, userRoutes)
