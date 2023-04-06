@@ -52,14 +52,17 @@ function Show({ user }) {
     return (
             <div>
                 <div className="a-post">
-                    <h2>{post.subject}</h2>
+                    <h2 style = {{fontWeight: 'bold', color: '#DB534D'}}>{post.subject}</h2>
                     <h5 style={{ opacity: '.2'}}>Posted by {post.user} on {new Date(post.createdAt).toLocaleDateString()} at {new Date(post.createdAt).toLocaleTimeString()}</h5>
                     <div className='p-body'>Price: ${post.body}</div><br /><br />
 
                     {
                         post.comments?.length ?
                         <>
-                            <div>Location:</div>
+                            <h5 style = {{fontWeight: 'bold', color: '#60C1EA'}}> See the item availability in the comments section below</h5>
+                            <br/>
+                            <br/>
+                            <div style = {{fontWeight: 'bold', color: 'black', fontSize: '20px'}}>Comments:</div>
                             <div>{post.comments.map((comment, i) => 
                                 <div key={i} className="comm">
                                     <div>Available in:</div>
@@ -78,7 +81,7 @@ function Show({ user }) {
                     }
                     {user && 
                         <details ref={detailsRef}>
-                            <summary style={{ opacity: '.5' }}>Specify Inventory Location:</summary>
+                            <summary style = {{fontWeight: 'bold', color: 'black', fontSize: '20px'}}>Specify Inventory Location:</summary>
                             <form onSubmit={handleSubmit}>
                                 <input ref={bodyRef} id="lc" cols="1" rows="1" />
                                 <button>Set Location</button>

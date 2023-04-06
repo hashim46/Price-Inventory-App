@@ -16,7 +16,7 @@ function Index({ user }) {
     console.log(posts)
     return (
             <div>
-                <h1>Inventory</h1>
+                <h1 style = {{fontWeight: 'bold', color: '#DB534D'}}>INVENTORY</h1>
                 <div id="posts">
 
                         {posts?.map((post, index) => 

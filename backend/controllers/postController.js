@@ -1,5 +1,5 @@
 const Inventory = require('../models/inventoryModel')
-const Comments = require('../models/itemModel')
+const Comments = require('../models/commentModel')
 
 const inventory = require('../models/inventory')
 

@@ -1,7 +1,7 @@
 const jwt = require('jsonwebtoken')
 
 const Inventory = require('../models/inventoryModel')
-const Item = require('../models/itemModel')
+const Item = require('../models/commentModel')
 
 async function authorize(req, res, next) {
 

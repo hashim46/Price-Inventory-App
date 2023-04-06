@@ -1,8 +1,16 @@
+body{
+background-color: #36FF80;
+background-image: url("https://images.unsplash.com/photo-1610289472626-6757ba6071e2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nzd8fHNoaXBwaW5nJTIwY29udGFpbmVyc3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=400&q=60");
+background-attachment: fixed;
+background-size: cover;
+}
+
 ul {
   position: relative;
   border: 1px solid black;
   list-style: none;
   padding: 20px;
+  color: white
 }
 li {
   display: flex;
@@ -297,3 +305,4 @@ li.posts-nav {
   position: absolute;
   left: 0;
 }
+

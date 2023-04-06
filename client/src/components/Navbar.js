@@ -10,7 +10,7 @@ function Navbar({ user, setUser }) {
   return (
     <div>
     
-    <nav className="navbar navbar-expand-lg navbar-dark bg-success">
+    <nav className="navbar navbar-expand-lg navbar-dark bg-warning">
       <div className="container-fluid">
         
         <button className="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -24,7 +24,7 @@ function Navbar({ user, setUser }) {
               <>
                 <li className="nav-item">
                   <Link className="nav-link" to="/posts">
-                    <span style={{ fontWeight: 'bold', color: 'white', fontSize: '18px', paddingRight: '165px' }}>Inventory</span>
+                    <span style={{ fontWeight: 'bold', color: '#DB534D', fontSize: '18px', paddingRight: '165px' }}>Inventory</span>
                   </Link>
                 </li>
 
@@ -34,7 +34,7 @@ function Navbar({ user, setUser }) {
 
                 <li onClick={logout}>
                   <Link className="nav-link" to="/login">
-                    <span style={{ fontWeight: 'bold', color: 'white', fontSize: '18px' }}>Logout</span>
+                    <span style={{ fontWeight: 'bold', color: '#DB534D', fontSize: '18px' }}>Logout</span>
                   </Link>
                 </li>
 
@@ -44,19 +44,19 @@ function Navbar({ user, setUser }) {
               <>
                 <li className="nav-item">
                   <Link className="nav-link" to="/register">
-                    <span style={{ fontWeight: 'bold', color: 'white', fontSize: '18px', paddingRight: '50px' }}>Register</span>
+                    <span style={{ fontWeight: 'bold', color: '#DB534D', fontSize: '18px', paddingRight: '50px' }}>Register</span>
                   </Link>
                 </li>
                 
                 <li className="nav-item">
                   <Link className="nav-link" to="/login">
-                    <span style={{ fontWeight: 'bold', color: 'white', fontSize: '18px', paddingRight: '50px' }}>Login</span>
+                    <span style={{ fontWeight: 'bold', color: '#DB534D', fontSize: '18px', paddingRight: '50px' }}>Login</span>
                   </Link>
                 </li>
 
                 <li className="nav-item">
                   <Link className="nav-link" to="/posts">
-                    <span style={{ fontWeight: 'bold', color: 'white', fontSize: '18px' }}>Inventory</span>
+                    <span style={{ fontWeight: 'bold', color: '#DB534D', fontSize: '18px' }}>Inventory</span>
                   </Link>
                 </li>
 
