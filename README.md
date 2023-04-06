@@ -1,15 +1,16 @@
 # Price inventory App intro
 
-The app allows the users to keep track of the business inventory and the ability to modify the inventory by the user who added it. 
+The app allows the users to keep track of and add business inventory, and it gives the users the ability to modify the inventory by the very person who added it. 
 
 In addition, the app can show the inventory to the customer without needing the login info. 
 
-Lastly, the business with mutiple locations can keep track of the inventory by city, which can be added by the user under comments section. 
+Lastly, the business with mutiple locations can keep track of the inventory by city, which can be added by the users under comments section. 
 
-# Deployed Website link (render.com)
+# Deployed Website link and other Links
+
+Render.com link:
 https://inventory-frontend-0v9f.onrender.com
 
-# Link to Trello, ERD Diagram, and Wireframe
 
 Trello: 
 https://trello.com/b/9gwz93vD/price-inventory
@@ -25,18 +26,26 @@ https://www.figma.com/file/F1HoZhiOXMovo5N0Y4JP2Q/Inventory-App?node-id=0%3A1&t=
 
 # Approach
 
-There were two full CRUD implemented. The inventory and its comments can be both created, deleted, upadated, and read and are stored in MongoDB cloud storage
+There were two full CRUD implemented in this full stack MERN application. The inventory and its comments can be both created, deleted, upadated, and read and are stored in MongoDB cloud storage. Below is the mention of the technologies used
 
 
 # Technologies used
 
-Node.js, MongoDB/Mongoose, Express and React
+• MongoDB/Mongoose: Used to store the user and inventory info
+
+• React was used to make the front page and UI
+
+• Npm packages were utilized for different functionalities (node.js)
+
+• BootStrap was utilized for styling the nav bar
+
+• Express.js was implement in the backend
 
 
-# Next steps
-If the business Get the inventory from an api for an specific item
+# Next steps for improvement
+If the business want to sell items that are not in the inventory, the application allow the customer to search an item by search bar and using an api
 
-Auto populate the item location in the comments
+The app auto populate the price and an item location in the comments
 
 
 
