@@ -23,10 +23,10 @@ function New({ user }) {
         <div>
             <h1 style = {{fontWeight: 'bold', color: '#DB534D'}}>NEW ENTRY</h1>
             <form onSubmit={handleSubmit}>
-                <label htmlFor="nme" style = {{fontWeight: 'bold', color: 'black', fontSize: '30px'}}>Item:</label><br />
+                <label htmlFor="nme" style = {{fontWeight: 'bold', color: 'black'}}>Item:</label><br />
                 <input type="text" id="nme" ref={subjectRef} /><br /><br />
 
-                <label htmlFor="clr" style = {{fontWeight: 'bold', color: 'black', fontSize: '30px'}}>Price:</label><br /> <i style = {{fontWeight: 'bold', color: 'black', fontSize: '30px'}}>$</i>
+                <label htmlFor="clr" style = {{fontWeight: 'bold', color: 'black'}}>Price:</label><br /> <i style = {{fontWeight: 'bold', color: 'black'}}>$</i>
                 <input type = "double" id="clr"  ref={bodyRef} /><br /><br />
 
                 <button>Submit</button>

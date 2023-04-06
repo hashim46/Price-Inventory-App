@@ -28,11 +28,11 @@ function Edit() {
 
     return ( 
         <div>
-            <h1>Edit Comment</h1>
+            <h1 style = {{fontWeight: 'bold', color: '#DB534D'}}>Edit Comment</h1>
             <div className='buttons' style={{ flexDirection: 'column' }}>
                 <form onSubmit={handleSubmit}>
 
-                    <label htmlFor="clr">Body:</label><br />
+                    <label htmlFor="clr" style = {{fontWeight: 'bold'}}>Body:</label><br />
                     <textarea ref={bodyRef} id="clr" cols="30" rows="10" defaultValue={comment.body} /><br /><br />
 
                     <button>Submit</button>
