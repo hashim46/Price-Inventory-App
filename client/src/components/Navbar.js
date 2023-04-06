@@ -55,7 +55,7 @@ function Navbar({ user, setUser }) {
                 </li>
 
                 <li className="nav-item">
-                  <Link className="nav-link" to="/posts">
+                  <Link className="nav-link" to="/inventory">
                     <span style={{ fontWeight: 'bold', color: '#DB534D', fontSize: '18px' }}>Inventory</span>
                   </Link>
                 </li>
