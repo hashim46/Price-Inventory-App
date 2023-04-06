@@ -65,12 +65,12 @@ function Show({ user }) {
                             <div style = {{fontWeight: 'bold', color: 'black', fontSize: '20px'}}>Comments:</div>
                             <div>{post.comments.map((comment, i) => 
                                 <div key={i} className="comm">
-                                    <div>Available in:</div>
+                                    <div>. Available in:</div>
                                     <div>{comment.body}</div>
                                     {comment.user === user &&
                                         <>
-                                            <button onClick={() => handleDeleteComment(comment)}>X</button>
-                                            <Link to={`/inventory/${post._id}/comments/${comment._id}`}><span>+</span></Link>
+                                            <button onClick={() => handleDeleteComment(comment)}>  ✘  </button>
+                                            <Link to={`/inventory/${post._id}/comments/${comment._id}`}><span>✚ </span></Link>
                                         </>
                                     }
                                 </div>
