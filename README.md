@@ -8,19 +8,19 @@ Lastly, the business with mutiple locations can keep track of the inventory by c
 
 # Deployed Website link and other Links
 
-Render.com link:
+• Render.com link:
 https://inventory-frontend-0v9f.onrender.com
 
 
-Trello: 
+• Trello: 
 https://trello.com/b/9gwz93vD/price-inventory
 
 
-ERD Diagram:
+• ERD Diagram:
 https://lucid.app/lucidchart/84766e00-e3a2-49d5-8f44-db9f0a7aa76f/edit?viewport_loc=136%2C-246%2C1838%2C1460%2C0_0&invitationId=inv_899a0ff9-8129-4b2f-9176-e2c82b48a0c1
 
 
-Wireframe:
+• Wireframe:
 https://www.figma.com/file/F1HoZhiOXMovo5N0Y4JP2Q/Inventory-App?node-id=0%3A1&t=PsqZdyRWlln15wVk-1
 
 
@@ -31,7 +31,7 @@ There were two full CRUD implemented in this full stack MERN application. The in
 
 # Technologies used
 
-• MongoDB/Mongoose: Used to store the user and inventory info
+• MongoDB/Mongoose was incorporated to store the user and inventory info
 
 • React was used to make the front page and UI
 
@@ -43,9 +43,12 @@ There were two full CRUD implemented in this full stack MERN application. The in
 
 
 # Next steps for improvement
-If the business want to sell items that are not in the inventory, the application allow the customer to search an item by search bar and using an api
 
-The app auto populate the price and an item location in the comments
+• The application should have pictures of the inventory items
+
+• The application allow the customer to search any product by a search bar. Then, adding an api to fetch product details and then show the inventory of other vendors. Also, an option to purchase the items as a drop ship 
+
+
 
 
 
